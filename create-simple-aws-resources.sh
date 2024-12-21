@@ -12,7 +12,7 @@ case $choice in
         echo "S3 bucket 'my-simple-bucket' created."
         ;;
     2)
-        aws ec2 run-instances --image-id ami-0abcdef1234567890 --count 1 --instance-type t2.micro --key-name MyKeyPair
+        aws ec2 run-instances --image-id ami-00defbe1aa228415e --count 1 --instance-type t2.micro --key-name MyKeyPair
         echo "EC2 instance created."
         ;;
     3)
@@ -23,4 +23,3 @@ case $choice in
         echo "Invalid choice. Please run the script again and select a valid option."
         ;;
 esac
-
